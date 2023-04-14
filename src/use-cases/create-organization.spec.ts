@@ -31,7 +31,7 @@ describe('Create Organization Use Case', () => {
     ])
   })
 
-  it('should be able to hash organization password upon creation', async () => {
+  it('should hash organization password upon creation', async () => {
     const { organization } = await sut.execute({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',

@@ -10,7 +10,7 @@ Find a Friend API - Adopt a pet
 - [ ] Deve ser possível visualizar detalhes de um pet para adoção
 - [x] Deve ser possível se cadastrar como uma ORG
 - [x] Deve ser possível realizar login como uma ORG
-- [ ] Deve ser possível recuperar os dados de uma organização logada
+- [x] Deve ser possível recuperar os dados de uma organização logada
 
 # RNs (Regras de negócio)
 
