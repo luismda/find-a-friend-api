@@ -7,6 +7,8 @@ interface CreateOrganizationUseCaseRequest {
   name: string
   address: string
   zip_code: string
+  city: string
+  federal_unit: string
   phone: string
   email: string
   password: string
@@ -23,6 +25,8 @@ export class CreateOrganizationUseCase {
     name,
     email,
     address,
+    city,
+    federal_unit,
     phone,
     zip_code,
     password,
@@ -41,6 +45,8 @@ export class CreateOrganizationUseCase {
       email,
       zip_code,
       address,
+      city,
+      federal_unit,
       phone,
       password_hash,
     })

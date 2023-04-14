@@ -33,6 +33,8 @@ export class InMemoryOrganizationsRepository
       name: data.name,
       zip_code: data.zip_code,
       address: data.address,
+      city: data.city,
+      federal_unit: data.federal_unit,
       phone: data.phone,
       email: data.email,
       password_hash: data.password_hash,

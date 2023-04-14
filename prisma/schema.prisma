@@ -11,6 +11,8 @@ model Organization {
   id            String   @id @default(uuid())
   name          String
   zip_code      String
+  city          String
+  federal_unit  String
   address       String
   phone         String
   email         String   @unique

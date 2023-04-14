@@ -17,6 +17,8 @@ describe('Create Organization Use Case', () => {
     const { organization } = await sut.execute({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
+      city: 'São Paulo',
+      federal_unit: 'SP',
       zip_code: '12345-000',
       phone: '19976542391',
       email: 'org123@example.com',
@@ -35,6 +37,8 @@ describe('Create Organization Use Case', () => {
     const { organization } = await sut.execute({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
+      city: 'São Paulo',
+      federal_unit: 'SP',
       zip_code: '12345-000',
       phone: '19976542391',
       email: 'org123@example.com',
@@ -53,6 +57,8 @@ describe('Create Organization Use Case', () => {
     const organization = {
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
+      city: 'São Paulo',
+      federal_unit: 'SP',
       zip_code: '12345-000',
       phone: '19976542391',
       email: 'org123@example.com',
