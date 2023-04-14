@@ -8,14 +8,14 @@ Find a Friend API - Adopt a pet
 - [ ] Deve ser possível listar todos os pets disponíveis para adoção em uma cidade
 - [ ] Deve ser possível filtrar pets por suas características
 - [ ] Deve ser possível visualizar detalhes de um pet para adoção
-- [ ] Deve ser possível se cadastrar como uma ORG
-- [ ] Deve ser possível realizar login como uma ORG
+- [x] Deve ser possível se cadastrar como uma ORG
+- [x] Deve ser possível realizar login como uma ORG
 - [ ] Deve ser possível recuperar os dados de uma organização logada
 
 # RNs (Regras de negócio)
 
 - [ ] Para listar os pets, obrigatoriamente precisamos informar a cidade
-- [ ] Uma ORG precisa ter um endereço e um número de WhatsApp
+- [x] Uma ORG precisa ter um endereço e um número de WhatsApp
 - [ ] Um pet deve estar ligado a uma ORG
 - [ ] Um pet deve ter no mínimo uma imagem
 - [ ] Um pet pode ou não ter requisitos para adoção
