@@ -1,19 +1,19 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { hash } from 'bcrypt'
 import { InMemoryOrganizationsRepository } from '@/repositories/in-memory/in-memory-organizations-repository'
-import { GetOrganizationProfileUseCase } from './get-organization-profile'
+import { GetOrganizationDetailsUseCase } from './get-organization-details'
 import { ResourceNotFoundError } from './errors/resource-not-found-error'
 
 let organizationsRepository: InMemoryOrganizationsRepository
-let sut: GetOrganizationProfileUseCase
+let sut: GetOrganizationDetailsUseCase
 
-describe('Get Organization Profile Use Case', () => {
+describe('Get Organization Details Use Case', () => {
   beforeEach(() => {
     organizationsRepository = new InMemoryOrganizationsRepository()
-    sut = new GetOrganizationProfileUseCase(organizationsRepository)
+    sut = new GetOrganizationDetailsUseCase(organizationsRepository)
   })
 
-  it('should be able to get a organization profile', async () => {
+  it('should be able to get a organization details', async () => {
     const createdOrganization = await organizationsRepository.create({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
@@ -40,7 +40,7 @@ describe('Get Organization Profile Use Case', () => {
     )
   })
 
-  it('should not be able to get a organization profile with wrong id', async () => {
+  it('should not be able to get a organization details with wrong id', async () => {
     await expect(() =>
       sut.execute({
         organizationId: 'non-existing-id',
