@@ -17,6 +17,8 @@ describe('Authenticate Organization Use Case', () => {
     await organizationsRepository.create({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
+      city: 'São Paulo',
+      federal_unit: 'SP',
       zip_code: '12345-000',
       phone: '19976542391',
       email: 'org123@example.com',
@@ -44,6 +46,8 @@ describe('Authenticate Organization Use Case', () => {
     await organizationsRepository.create({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
+      city: 'São Paulo',
+      federal_unit: 'SP',
       zip_code: '12345-000',
       phone: '19976542391',
       email: 'org123@example.com',

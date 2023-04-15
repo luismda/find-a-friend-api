@@ -5,6 +5,18 @@ import { PetCreateInput, PetsRepository } from '../pets-repository'
 export class InMemoryPetsRepository implements PetsRepository {
   public items: Pet[] = []
 
+  async findManyByCity(city: string, page: number) {
+    const pets = this.items
+      .filter((item) => {
+        const organizationCity = item.organization_id
+
+        return organizationCity === city
+      })
+      .slice((page - 1) * 20, page * 20)
+
+    return pets
+  }
+
   async create(data: PetCreateInput) {
     const pet: Pet = {
       id: randomUUID(),

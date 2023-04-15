@@ -20,6 +20,8 @@ describe('Create Pet Use Case', () => {
     const organization = await organizationsRepository.create({
       name: 'Adopt your Mate',
       address: 'Street ABC, 123',
+      city: 'São Paulo',
+      federal_unit: 'SP',
       zip_code: '12345-000',
       phone: '19976542391',
       email: 'org123@example.com',
@@ -35,7 +37,7 @@ describe('Create Pet Use Case', () => {
       level_of_idependence: 'MEDIUM',
       recommended_environment_size: 'BIG',
       size: 'SMALL',
-      images_url: ['https://github.com/luismda.png'],
+      images_url: [],
       requirements_for_adoption: ['Apartament is prohibited'],
     })
 
@@ -58,7 +60,7 @@ describe('Create Pet Use Case', () => {
         level_of_idependence: 'MEDIUM',
         recommended_environment_size: 'BIG',
         size: 'SMALL',
-        images_url: ['https://github.com/luismda.png'],
+        images_url: [],
         requirements_for_adoption: ['Apartament is prohibited'],
       }),
     ).rejects.toBeInstanceOf(ResourceNotFoundError)
