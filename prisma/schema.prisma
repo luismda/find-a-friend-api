@@ -36,24 +36,24 @@ enum Size {
   BIG
 }
 
-enum LevelOfIdependence {
+enum LevelOfIndependence {
   LOW
   MEDIUM
   HIGH
 }
 
 model Pet {
-  id                           String             @id @default(uuid())
+  id                           String              @id @default(uuid())
   name                         String
   about_me                     String
   age_category                 AgeCategory
   energy_level                 Int
   size                         Size
-  level_of_idependence         LevelOfIdependence
+  level_of_independence        LevelOfIndependence
   recommended_environment_size Size
   images_url                   String[]
   requirements_for_adoption    String[]
-  created_at                   DateTime           @default(now())
+  created_at                   DateTime            @default(now())
 
   organization    Organization @relation(fields: [organization_id], references: [id])
   organization_id String

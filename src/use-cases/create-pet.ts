@@ -10,7 +10,7 @@ interface CreatePetUseCaseRequest {
   age_category: 'CUB' | 'ADULT' | 'ELDERLY'
   energy_level: number
   size: 'SMALL' | 'MEDIUM' | 'BIG'
-  level_of_idependence: 'LOW' | 'MEDIUM' | 'HIGH'
+  level_of_independence: 'LOW' | 'MEDIUM' | 'HIGH'
   recommended_environment_size: 'SMALL' | 'MEDIUM' | 'BIG'
   images_url: string[]
   requirements_for_adoption: string[]
@@ -33,7 +33,7 @@ export class CreatePetUseCase {
     age_category,
     energy_level,
     size,
-    level_of_idependence,
+    level_of_independence,
     recommended_environment_size,
     images_url,
     requirements_for_adoption,
@@ -53,7 +53,7 @@ export class CreatePetUseCase {
       age_category,
       energy_level,
       size,
-      level_of_idependence,
+      level_of_independence,
       recommended_environment_size,
       images_url,
       requirements_for_adoption,

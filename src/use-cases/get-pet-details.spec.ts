@@ -19,7 +19,7 @@ describe('Get Pet Details Use Case', () => {
       about_me: "I'am a very funny dog!",
       age_category: 'CUB',
       energy_level: 5,
-      level_of_idependence: 'MEDIUM',
+      level_of_independence: 'MEDIUM',
       recommended_environment_size: 'BIG',
       size: 'SMALL',
       images_url: [],
