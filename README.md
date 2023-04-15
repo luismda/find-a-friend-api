@@ -7,10 +7,10 @@ Find a Friend API - Adopt a pet
 - [x] Deve ser possível cadastrar um pet
 - [x] Deve ser possível listar todos os pets disponíveis para adoção em uma cidade
 - [ ] Deve ser possível filtrar pets por suas características
-- [ ] Deve ser possível visualizar detalhes de um pet para adoção
+- [x] Deve ser possível visualizar detalhes de um pet para adoção
 - [x] Deve ser possível se cadastrar como uma ORG
 - [x] Deve ser possível realizar login como uma ORG
-- [x] Deve ser possível recuperar os dados de uma organização logada
+- [x] Deve ser possível recuperar os dados de uma organização
 
 # RNs (Regras de negócio)
 
@@ -28,5 +28,5 @@ Find a Friend API - Adopt a pet
 - [ ] Deve ser utilizado a API de um terceiro para buscar a cidade e estado pelo CEP
 - [ ] O banco de dados PostgreSQL deve ser usado para persistência dos dados
 - [ ] As imagens enviadas por upload devem ficar armazenadas em um serviço externo (SupaBase)
-- [ ] Todas as listas da aplicação devem ter no máximo 20 itens por página
+- [x] Todas as listas da aplicação devem ter no máximo 20 itens por página
 - [ ] A organização deve ser identificada por um JWT (JSON Web Token)

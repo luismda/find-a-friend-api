@@ -14,6 +14,7 @@ export interface PetCreateInput {
 }
 
 export interface PetsRepository {
+  findById(id: string): Promise<Pet | null>
   findManyByCity(city: string, page: number): Promise<Pet[]>
   create(data: PetCreateInput): Promise<Pet>
 }
