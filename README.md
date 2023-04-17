@@ -25,7 +25,6 @@ Find a Friend API - Adopt a pet
 
 # RNFs (Requisitos não-funcionais)
 
-- [ ] Deve ser utilizado a API de um terceiro para buscar a cidade e estado pelo CEP
 - [ ] O banco de dados PostgreSQL deve ser usado para persistência dos dados
 - [ ] As imagens enviadas por upload devem ficar armazenadas em um serviço externo (SupaBase)
 - [x] Todas as listas da aplicação devem ter no máximo 20 itens por página

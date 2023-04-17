@@ -1,7 +1,7 @@
 import fastify from 'fastify'
 
+import { organizationsRoutes } from './http/controllers/organizations/routes'
+
 export const app = fastify()
 
-app.get('/', () => {
-  return 'ok'
-})
+app.register(organizationsRoutes)
