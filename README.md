@@ -25,7 +25,7 @@ Find a Friend API - Adopt a pet
 
 # RNFs (Requisitos não-funcionais)
 
-- [ ] O banco de dados PostgreSQL deve ser usado para persistência dos dados
+- [x] O banco de dados PostgreSQL deve ser usado para persistência dos dados
 - [ ] As imagens enviadas por upload devem ficar armazenadas em um serviço externo (SupaBase)
 - [x] Todas as listas da aplicação devem ter no máximo 20 itens por página
-- [ ] A organização deve ser identificada por um JWT (JSON Web Token)
+- [x] A organização deve ser identificada por um JWT (JSON Web Token)
