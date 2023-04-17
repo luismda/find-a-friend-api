@@ -28,37 +28,19 @@ export class InMemoryPetsRepository implements PetsRepository {
       .filter((item) => {
         const organizationCity = item.organization_id
 
+        if (additionalFilters) {
+          const filters = Object.keys(
+            additionalFilters,
+          ) as (keyof typeof additionalFilters)[]
+
+          for (const filter of filters) {
+            if (item[filter] !== additionalFilters[filter]) {
+              return false
+            }
+          }
+        }
+
         return organizationCity === city
-      })
-      .filter((item) => {
-        if (!additionalFilters?.age_category) {
-          return true
-        }
-
-        return item.age_category === additionalFilters.age_category
-      })
-      .filter((item) => {
-        if (!additionalFilters?.energy_level) {
-          return true
-        }
-
-        return item.energy_level === additionalFilters.energy_level
-      })
-      .filter((item) => {
-        if (!additionalFilters?.size) {
-          return true
-        }
-
-        return item.size === additionalFilters.size
-      })
-      .filter((item) => {
-        if (!additionalFilters?.level_of_independence) {
-          return true
-        }
-
-        return (
-          item.level_of_independence === additionalFilters.level_of_independence
-        )
       })
       .slice((page - 1) * 20, page * 20)
 
