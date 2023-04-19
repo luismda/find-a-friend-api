@@ -1,6 +1,6 @@
 # App
 
-Find a Friend API - Adopt a pet
+Find A Friend API - Adopt a pet
 
 # RFs (Resitos funcionais)
 
