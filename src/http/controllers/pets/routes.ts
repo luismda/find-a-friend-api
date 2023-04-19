@@ -2,6 +2,7 @@ import { FastifyInstance } from 'fastify'
 
 import { create } from './create'
 import { details } from './details'
+import { fetchByCity } from './fetch-by-city'
 
 import { verifyJWT } from '@/http/middlewares/verify-jwt'
 import { validateAndFormatImagesToUpload } from '@/http/middlewares/validate-and-format-images-to-upload'
@@ -17,4 +18,5 @@ export async function petsRoutes(app: FastifyInstance) {
   )
 
   app.get('/pets/:petId', details)
+  app.get('/pets', fetchByCity)
 }
