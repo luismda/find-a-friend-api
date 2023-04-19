@@ -30,3 +30,6 @@ jobs:
         env:
           JWT_SECRET: testing
           DATABASE_URL: "postgresql://docker:docker@localhost:5432/find_a_friend_api?schema=public"
+          SUPABASE_PETS_BUCKET: pets
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
